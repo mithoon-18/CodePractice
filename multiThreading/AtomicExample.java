@@ -3,7 +3,9 @@ package multiThreading;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class AtomicExample {
-
+	//Atomicity read,modify and write operation are indivisible
+	//if directly using int count and two or more thread individual accesing count so they able to read same value but whie updating one can dot do.
+	
 	public static AtomicInteger count = new AtomicInteger();
 	//static int count=0;
 	
@@ -37,3 +39,4 @@ public class AtomicExample {
 		
 	}
 }
+
