@@ -1,7 +1,10 @@
 package multiThreading;
 
 public class VolatileExample implements Runnable{
-
+	//volatite ensures visibility of variable to all the threads.
+	//it is helpful when too many thread are read volatile variable and react,few thread area used to write volite variable.
+	//volatile is stored in main memory not cache due to this it is visible to all thread.
+	//One person updates a notice, many people read it, and everyone must see the latest value immediately.
 	public static  volatile boolean running = true;
 
 
@@ -61,3 +64,4 @@ public class VolatileExample implements Runnable{
 
 
 }
+
